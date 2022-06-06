@@ -1,5 +1,5 @@
-class Client:
-    def __init__(self, id, title, description, author, status):
+class Book:
+    def __init__(self, id, title, description, author, status: bool):
         self.__id = id
         self.__title = title
         self.__description = description
@@ -9,30 +9,33 @@ class Client:
     def set_id(self, id):
         self.__id = id
 
-    def set_full_name(self, title):
+    def set_title(self, title):
         self.__title = title
 
-    def set_age(self, description):
+    def set_description(self, description):
         self.__description = description
 
-    def set_id_no(self, author):
+    def set_author(self, author):
         self.__author = author
 
-    def set_phone_number(self, status):
+    def set_status(self, status):
         self.__status = status
 
     def get_id(self):
         return self.__id
 
-    def get_full_name(self):
+    def get_title(self):
         return self.__title
 
-    def get_age(self):
+    def get_description(self):
         return self.__description
 
-    def get_id_no(self):
+    def get_author(self):
         return self.__author
 
-    def get_phone_number(self):
-        return self.__status
+    def get_status(self):
+        if self.__status:
+            return "Active"
+        else:
+            return "In-active"
 

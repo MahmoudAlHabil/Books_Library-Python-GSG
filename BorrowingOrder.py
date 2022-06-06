@@ -1,4 +1,4 @@
-class Client:
+class BorrowingOrder:
     def __init__(self, id, date, client_id, book_id, status):
         self.__id = id
         self.__date = date
@@ -9,29 +9,29 @@ class Client:
     def set_id(self, id):
         self.__id = id
 
-    def set_full_name(self, date):
+    def set_date(self, date):
         self.__date = date
 
-    def set_age(self, client_id):
+    def set_client_id(self, client_id):
         self.__client_id = client_id
 
-    def set_id_no(self, book_id):
+    def set_book_id(self, book_id):
         self.__book_id = book_id
 
-    def set_phone_number(self, status):
+    def set_status(self, status):
         self.__status = status
 
     def get_id(self):
         return self.__id
 
-    def get_full_name(self):
+    def get_date(self):
         return self.__date
 
-    def get_age(self):
+    def get_client_id(self):
         return self.__client_id
 
-    def get_id_no(self):
+    def get_book_id(self):
         return self.__book_id
 
-    def get_phone_number(self):
+    def get_status(self):
         return self.__status
